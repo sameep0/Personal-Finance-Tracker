@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#7C3AED" />
+    <meta
+      name="description"
+      content="Personal Finance Tracker - Manage your finances with ease"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+      html, body {
+        height: 100vh;
+        overflow: hidden;
+      }
+      input:-webkit-autofill,
+      input:-webkit-autofill:focus,
+      input:-webkit-autofill:hover,
+      input:-webkit-autofill:active {
+        -webkit-box-shadow: 0 0 0 1000px #23232a inset !important;
+        box-shadow: 0 0 0 1000px #23232a inset !important;
+        -webkit-text-fill-color: #fafafa !important;
+        caret-color: #a78bfa !important;
+        transition: background-color 5000s ease-in-out 0s;
+      }
+      input:-internal-autofill-selected {
+        background-color: #23232a !important;
+        color: #fafafa !important;
+      }
+      .animated-border {
+        position: relative;
+        border: 3px solid transparent;
+        border-radius: 14px;
+        background: linear-gradient(#23232a, #23232a) padding-box,
+          linear-gradient(120deg, #23232a, #44444b, #6b7280, #9ca3af, #23232a) border-box;
+        background-origin: padding-box, border-box;
+        background-clip: padding-box, border-box;
+        animation: borderGradientMove 16s linear infinite;
+        box-shadow: 0 2px 12px 0 rgba(44, 21, 94, 0.10) inset;
+      }
+      .animated-border:before {
+        display: none;
+      }
+      .animated-border > * {
+        position: relative;
+        z-index: 2;
+      }
+      @keyframes borderGradientMove {
+        0% {
+          background-position: 0% 50%, 0% 50%;
+        }
+        100% {
+          background-position: 100% 50%, 0% 50%;
+        }
+      }
+    </style>
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/Titlelogo.png" />
+    
+    
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    oot public URL by running `npm run build`.
+    
+    <title>Personal Finance Tracker</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+   
+  </body>
+</html>
